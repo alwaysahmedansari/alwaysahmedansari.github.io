@@ -85,6 +85,13 @@ a.tile:hover{border-color:var(--accent);background:var(--tint)}
 .tile b{display:block;font-weight:600;line-height:1.3}
 .tile small{color:var(--muted);font-size:.9rem;overflow-wrap:anywhere}
 
+.more-profiles summary{list-style:none;cursor:pointer;user-select:none}
+.more-profiles summary::-webkit-details-marker{display:none}
+.more-profiles summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.more-profiles .t2,.more-profiles[open] .t1{display:none}
+.more-profiles[open] .t2{display:inline}
+.more-profiles .tiles{margin-top:1.75rem;animation:reveal 1s ease}
+@keyframes reveal{from{opacity:0}to{opacity:1}}
 .btn{display:inline-block;padding:.9rem 1.7rem;border-radius:999px;border:1px solid var(--accent);font-weight:600;text-decoration:none;transition:background-color .6s,color .6s}
 .btn.fill{background:var(--accent);color:var(--bg)}
 .btn.fill:hover{background:transparent;color:var(--accent)}
@@ -107,7 +114,7 @@ footer p+p{margin-top:.75rem}
 <body>
 <header class="nav"><div class="wrap nav-in">
 <a class="brand" href="#top">Ahmed Ansari</a>
-<nav aria-label="Main"><a href="#about">About</a><a href="#interests">Interests</a><a href="#writing">Writing</a><a href="#profiles">Profiles</a><a class="keep" href="#contact">Contact</a></nav>
+<nav aria-label="Main"><a href="#about">About</a><a href="#interests">Interests</a><a href="#writing">Writing</a><a class="keep" href="#profiles">Profiles</a></nav>
 </div></header>
 
 <main id="top">
@@ -164,7 +171,8 @@ footer p+p{margin-top:.75rem}
 <section class="sec" id="profiles"><div class="wrap">
 <h2>Find me online</h2>
 <p class="lead">Most of my accounts use @alwaysahmedansari. X and Bluesky use different handles.</p>
-<div class="tiles rv">
+<details class="more-profiles rv"><summary class="btn ghost"><span class="t1">Show all profiles</span><span class="t2">Hide profiles</span></summary>
+<div class="tiles">
 <a class="tile" href="https://www.threads.com/@alwaysahmedansari" target="_blank" rel="me noopener"><span class="ic">T</span><span><b>Threads</b><small>@alwaysahmedansari</small></span></a>
 <a class="tile" href="https://www.instagram.com/alwaysahmedansari" target="_blank" rel="me noopener"><span class="ic">I</span><span><b>Instagram</b><small>@alwaysahmedansari</small></span></a>
 <a class="tile" href="https://www.tiktok.com/@alwaysahmedansari" target="_blank" rel="me noopener"><span class="ic">T</span><span><b>TikTok</b><small>@alwaysahmedansari</small></span></a>
@@ -178,16 +186,9 @@ footer p+p{margin-top:.75rem}
 <a class="tile" href="https://medium.com/@alwaysahmedansari" target="_blank" rel="me noopener"><span class="ic">M</span><span><b>Medium</b><small>@alwaysahmedansari</small></span></a>
 <a class="tile" href="https://substack.com/@alwaysahmedansari" target="_blank" rel="me noopener"><span class="ic">S</span><span><b>Substack</b><small>@alwaysahmedansari</small></span></a>
 <a class="tile" href="https://www.quora.com/profile/Ahmed-Ansari-459" target="_blank" rel="me noopener"><span class="ic">Q</span><span><b>Quora</b><small>Ahmed Ansari</small></span></a>
-<a class="tile" href="https://linktr.ee/theahmedansari" target="_blank" rel="me noopener"><span class="ic">L</span><span><b>Linktree</b><small>theahmedansari</small></span></a>
 </div>
-</div></section>
-
-<section class="sec" id="contact"><div class="wrap">
-<div class="card rv">
-<h2>Contact</h2>
-<p class="lead">For general inquiries, use the contact options on my Linktree.</p>
-<div class="btns"><a class="btn fill" href="https://linktr.ee/theahmedansari" target="_blank" rel="noopener">Open Linktree</a></div>
-</div>
+</details>
+<p class="note">For general inquiries, use my <a href="https://linktr.ee/theahmedansari" target="_blank" rel="noopener">Linktree</a>.</p>
 </div></section>
 </main>
 
