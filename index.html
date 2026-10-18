@@ -9,6 +9,7 @@
 <meta name="description" content="Official author profile of Ahmed Ansari, author and researcher based in Lahore, Pakistan. Writing interests include history, politics and society, religion and philosophy, and content writing.">
 <link rel="canonical" href="https://alwaysahmedansari.github.io/">
 <meta property="og:type" content="website">
+<meta property="og:image" content="https://alwaysahmedansari.github.io/ahmed-ansari-author-lahore.jpg">
 <meta property="og:url" content="https://alwaysahmedansari.github.io/">
 <meta property="og:title" content="Ahmed Ansari — Author &amp; Researcher">
 <meta property="og:description" content="Official author profile of Ahmed Ansari, author and researcher based in Lahore, Pakistan. Writing interests include history, politics and society, religion and philosophy, and content writing.">
@@ -17,7 +18,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Newsreader:wght@400;500&display=swap" rel="stylesheet">
 <script>document.documentElement.classList.add('js')</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Ahmed Ansari","url":"https://alwaysahmedansari.github.io/","jobTitle":"Author and Researcher","address":{"@type":"PostalAddress","addressLocality":"Lahore","addressCountry":"PK"},"sameAs":["https://linktr.ee/theahmedansari","https://github.com/alwaysahmedansari","https://medium.com/@alwaysahmedansari","https://substack.com/@alwaysahmedansari","https://x.com/ahmedansari22","https://www.threads.com/@alwaysahmedansari","https://www.linkedin.com/in/ahmed-ansari-633883397","https://www.quora.com/profile/Ahmed-Ansari-459"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Ahmed Ansari","url":"https://alwaysahmedansari.github.io/","image":"https://alwaysahmedansari.github.io/ahmed-ansari-author-lahore.jpg","jobTitle":"Author and Researcher","address":{"@type":"PostalAddress","addressLocality":"Lahore","addressCountry":"PK"},"sameAs":["https://linktr.ee/theahmedansari","https://github.com/alwaysahmedansari","https://medium.com/@alwaysahmedansari","https://substack.com/@alwaysahmedansari","https://x.com/ahmedansari22","https://www.threads.com/@alwaysahmedansari","https://www.linkedin.com/in/ahmed-ansari-633883397","https://www.quora.com/profile/Ahmed-Ansari-459"]}</script>
 <style>
 :root{color-scheme:light dark;--bg:#fff;--surface:#f7faff;--ink:#16327a;--head:#0a2260;--muted:#4f6498;--accent:#2557d6;--tint:#e8efff;--line:#dce6f7;--glow:rgba(37,87,214,.14);--shadow:0 1px 2px rgba(10,34,96,.04),0 28px 60px -24px rgba(10,34,96,.18)}
 @media(prefers-color-scheme:dark){:root{--bg:#060b1a;--surface:#0d1632;--ink:#d9e4ff;--head:#f4f7ff;--muted:#93a6d3;--accent:#7ea6ff;--tint:#15244d;--line:#1b2b57;--glow:rgba(90,140,255,.2);--shadow:inset 0 1px 0 rgba(255,255,255,.05),0 28px 60px -24px rgba(0,0,0,.6)}}
@@ -62,7 +63,10 @@ h3{font:500 1.6rem/1.25 'Newsreader',Georgia,serif;margin-bottom:.75rem}
 .grid{display:grid;gap:clamp(1.25rem,3vw,2rem)}
 .g2{grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr))}
 .g3{grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr))}
-.about{display:grid;gap:2.5rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
+.about{display:grid;gap:clamp(1.75rem,4vw,3rem);grid-template-columns:minmax(0,240px) 1fr;align-items:start}
+.bio{display:grid;gap:2rem}
+.portrait{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center top;border-radius:20px;border:1px solid var(--line);background:var(--tint)}
+@media(max-width:720px){.about{grid-template-columns:1fr}.portrait{max-width:240px}}
 .about p{color:var(--ink)}
 .about p+p{margin-top:1rem;color:var(--muted)}
 .facts{display:grid;gap:1.1rem}
@@ -117,6 +121,8 @@ footer p+p{margin-top:.75rem}
 <section class="sec" id="about"><div class="wrap">
 <h2>About</h2>
 <div class="card about rv">
+<img class="portrait" src="ahmed-ansari-author-lahore.jpg" alt="Ahmed Ansari, author and researcher in Lahore, Pakistan" width="519" height="693" loading="lazy">
+<div class="bio">
 <div>
 <p>Welcome to the official author profile of Ahmed Ansari, an author and researcher based in Lahore, Pakistan.</p>
 <p>My goal is to make my author identity and publicly available work easier to discover and access.</p>
@@ -127,6 +133,7 @@ footer p+p{margin-top:.75rem}
 <div><dt>Location</dt><dd>Lahore, Pakistan</dd></div>
 <div><dt>Writing in</dt><dd>English and Urdu</dd></div>
 </dl>
+</div>
 </div>
 </div></section>
 
